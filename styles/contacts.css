@@ -1,0 +1,90 @@
+.contacts {
+    margin: 0 56px 40px 56px;
+    background-color: #e6e0fa;
+    padding: 40px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contacts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contacts__text-wrapper {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.contacts__title {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .contacts__title {
+        margin-bottom: 10px;
+    }
+}
+
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts__input, .contacts__direction {
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contacts__btn {
+    font-size: 14px;
+    padding: 15px 15px;
+    outline: none;
+    border: none;
+    background-color: #5b45b8;
+    color: #ffffff;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color .3s ease, scale .3s ease;
+}
+
+.contacts__btn:hover, .contacts__btn:focus, .contacts__btn:focus-visible {
+    background-color: #7f67e8;
+    scale: 1.1;
+}
+
+.contacts__icon {
+    justify-self: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts__icon {
+        display: none;
+    }
+}

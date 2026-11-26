@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-wrapper">
+            <svg class="header__logo-icon" width="50" height="50">
+                <use xlink:href="./icons/education.svg#edu-icon"></use>
+            </svg>
+            <span class="header__logo-name">EduHub</span>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#courses">Каталог</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="./index.html#education" target="_blank">Обучение</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#about-us">О нас</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__links-wrapper">
+            <button class="header__search-btn">
+                <svg class="header__search-icon" width="22" height="22">
+                    <use xlink:href="./icons/search.svg#search-icon"></use>
+                </svg>
+            </button>
+            <a class="header__profile-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                <svg class="header__profile-icon" width="22" height="22">
+                    <use xlink:href="./icons/profile.svg#profile-icon"></use>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <main>
+        <h1 class="visually-hidden">Информация про обучение</h1>
+        <section class="poster" id="about-us">
+            <div class="poster__info">
+                <h2 class="poster__heading">Учебный сервси для вашего роста</h2>
+                <p class="poster__text">Онлайн-курсы, практические задания и поддержка экспертов - все, чтобы вы учились с комфортом и достигали целей.</p>
+                <a class="poster__btn" href="#courses">Выбрать курс</a>
+            </div>
+            <img class="poster__img" src="./images/books.jpg" alt="Фото книжки">
+        </section>
+        <section class="advantages">
+            <h2 class="advantages__heading">Наши преимущества</h2>
+            <ul class="advantages__list">
+                <li class="advantages__item">
+                    <svg class="advantages__icon" width="50" height="50">
+                        <use xlink:href="./icons/rocket.svg#rocket-icon"></use>
+                    </svg>
+                    <h3 class="advantages__title">Гибкий формат</h3>
+                    <p class="advantages__text">Обучайтесь в удобное время</p>
+                </li>
+                <li class="advantages__item">
+                    <svg class="advantages__icon" width="50" height="50">
+                        <use xlink:href="./icons/video.svg#video-icon"></use>
+                    </svg>
+                    <h3 class="advantages__title">Практика и поддержка</h3>
+                    <p class="advantages__text">Применяйте знания на практике</p>
+                </li>
+                <li class="advantages__item">
+                    <svg class="advantages__icon" width="50" height="50">
+                        <use xlink:href="./icons/protect.svg#protect-icon"></use>
+                    </svg>
+                    <h3 class="advantages__title">Эксперты</h3>
+                    <p class="advantages__text">Курсы от профессионалов с опытом</p>
+                </li>
+                <li class="advantages__item">
+                    <svg class="advantages__icon" width="50" height="50">
+                        <use xlink:href="./icons/star.svg#star-icon"></use>
+                    </svg>
+                    <h3 class="advantages__title">Сертификат</h3>
+                    <p class="advantages__text">Подтверждайте свои навыки</p>
+                </li>
+            </ul>
+        </section>
+        <section class="courses" id="courses">
+            <h2 class="courses__title">Наши образовательные программы</h2>
+            <ul class="courses__list">
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/program.jpg" alt="Иллюстрация кода на ноутбуке">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Программирование</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Python для начинающих</h3>
+                            <p class="courses__text">Освойте Python с нуля и создавайте свои проекты</p>
+                            <span class="courses__price">149 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/colors.jpg" alt="Иллюстрация красок дизайнера">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Дизайн</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Основы UI/UX дизайна</h3>
+                            <p class="courses__text">Создайте удобные и красивые интерфейсы</p>
+                            <span class="courses__price">124 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/digital.jpg" alt="Иллюстрация графиков">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Маркетинг</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Digital-маркетинг</h3>
+                            <p class="courses__text">Продвигайте продукты и бренды онлайн</p>
+                            <span class="courses__price">139 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/analytics.jpg" alt="Иллюстрация анализа данных">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Аналитика</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Аналитика данных с нуля</h3>
+                            <p class="courses__text">Работайте с данными и находите инсайты</p>
+                            <span class="courses__price">164 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="contacts__text-wrapper">
+                <h3 class="contacts__title">Оставьте заявку на обучение</h3>
+                <p class="contacts__text">Мы свяжемся с вами и поможем выбрать курс</p>
+            </div>
+            <form action="#" method="POST" class="contacts__form">
+                <input type="name" class="contacts__input" placeholder="Ваше имя*" required>
+                <input type="email" class="contacts__input" placeholder="Email*" required>
+                <select class="contacts__direction" name="categories" id="categories">
+                    <option value="all" selected>Все категории</option>
+                    <option value="programming">Программирование</option>
+                    <option value="web-developing">Веб-разработка</option>
+                    <option value="ui-ux-design">UI/UX-дизайн</option>
+                    <option value="graphic-design">Графический дизайн</option>
+                    <option value="digital-marketing">Диджитал маркетинг</option>
+                    <option value="data-analyics">Аналитика данных</option>
+                    <option value="business-and-management">Бизнес и менеджмент</option>
+                    <option value="foreign-languages">Иностранные языки</option>
+                    <option value="psychology">Психология и саморазвитие</option>
+                    <option value="health-and-sport">Здоровье и спорт</option>
+                </select>
+                <button class="contacts__btn" type="button">Оправить заявку</button>
+            </form>
+            <svg class="contacts__icon" width="100" height="100">
+                <use xlink:href="./icons/message.svg#message-icon"></use>
+            </svg>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo-content">
+                <svg class="footer__logo-icon" width="50" height="50">
+                    <use xlink:href="./icons/education.svg#edu-icon"></use>
+                </svg>
+                <div class="footer__logo-text-wrapper">
+                    <span class="footer__logo-name">EduHub</span>
+                    <span class="footer__logo-text">Учись. Развивайся. Достигай.</span>
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#courses">Каталог</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="./index.html#education" target="_blank">Обучение</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#about-us">О нас</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__socials-list">
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                        <svg class="footer__telegram-icon" width="20" height="20">
+                            <use xlink:href="./icons/telegram.svg#telegram-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                        <svg class="footer__vk-icon" width="20" height="20">
+                            <use xlink:href="./icons/vk.svg#vk-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                        <svg class="footer__youtube-icon" width="20" height="20">
+                            <use xlink:href="./icons/youtube.svg#youtube-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__add-info">
+            <span class="footer__rights">ⓒ 2026 EduHub. Все права защищены.</span>
+            <div class="footer__add-info-wrapper">
+                <a class="footer__confidentiality" href="https://developer.mozilla.org/en-US/" target="_blank">Политика конфиденциальности</a>
+                <a class="footer__agreement" href="https://developer.mozilla.org/en-US/" target="_blank">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

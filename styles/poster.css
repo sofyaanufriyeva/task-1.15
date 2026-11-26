@@ -1,0 +1,94 @@
+.poster {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 56px;
+    background: linear-gradient(to right, #f4f1fd, #e9e3fa, #d9d0f4);
+    margin-bottom: 32px;
+    gap: 40px;
+}
+
+@media screen and (max-width: 850px) {
+    .poster {
+        display: block;
+    }
+}
+
+.poster__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+}
+
+@media screen and (max-width: 850px) {
+    .poster__info {
+        align-items: center;
+        max-width: unset;
+    }
+}
+
+.poster__heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 52px;
+    color: #1b1e3a;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .poster__heading {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .poster__heading {
+        text-align: center;
+    }
+}
+
+.poster__text {
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+@media screen and (max-width: 850px) {
+    .poster__text {
+        text-align: center;
+    }
+}
+
+.poster__btn {
+    max-width: 220px;
+    font-size: 14px;
+    padding: 15px 15px;
+    outline: none;
+    border: none;
+    background-color: #5b45b8;
+    color: #ffffff;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color .3s ease, scale .3s ease;
+}
+
+.poster__btn:hover, .poster__btn:focus, .poster__btn:focus-visible {
+    background-color: #7f67e8;
+    scale: 1.1;
+}
+
+.poster__img {
+    width: 420px;
+    height: 230px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .poster__img {
+        display: none;
+    }
+}

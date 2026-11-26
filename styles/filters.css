@@ -1,0 +1,86 @@
+.filters {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 56px 25px 56px;
+    background-color: #f3f0fc;
+    padding: 16px 20px 16px 16px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.filters::after {
+    content: "Блок фильтров пока не работает";
+    position: absolute;
+    height: 130%;
+    width: 100%;
+    background-color: #c2c2c2;
+    top: -20px;
+    right: 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .filters {
+        display: block;
+    }
+}
+
+.filters__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
+}
+
+@media screen and (max-width: 850px) {
+    .filters__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.filters__search {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Manrope", sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+    .filters__search {
+        grid-column: span 2;
+    }
+}
+
+.filers__search::placeholder {
+    opacity: 0.5;
+}
+
+.filters__direction {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: "Manrope", sans-serif;
+}
+
+.filters__sort {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: "Manrope", sans-serif;
+}
+
+.filters__icon {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+    .filters__icon {
+        display: none;
+    }
+}

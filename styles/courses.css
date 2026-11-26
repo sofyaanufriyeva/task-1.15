@@ -1,0 +1,144 @@
+.courses {
+    margin: 0 56px 28px 56px;
+}
+
+.courses__title {
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.courses__list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 21px;
+}
+
+@media screen and (max-width: 1200px) {
+    .courses__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .courses__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .courses__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.courses__card {
+    display: flex; 
+    flex-direction: column; 
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    height: 100%;
+}
+
+.courses__img-wrapper {
+    height: 110px;
+    position: relative;
+}
+
+.courses__img {
+    width: 100%;
+    height: 100%;
+}
+
+.courses__like-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: #ffffff;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: scale .2s ease;
+}
+
+.courses__like-btn:hover, .courses__like-btn:focus, .courses__like-btn:focus-visible {
+    scale: 1.2;
+}
+
+.courses__like-btn.is-licked {
+    opacity: 1;
+}
+
+.courses__like-icon {
+    opacity: 0.8;
+    transition: scale .2s ease;
+}
+
+.courses__like-btn:hover .courses__like-icon, .courses__like-btn:focus .courses__like-icon, .courses__like-btn:focus-visible .courses__like-icon {
+    scale: 1.1;
+}
+
+.courses__like-btn.is-licked .courses__like-icon {
+    fill: red;
+    opacity: 1;
+}
+
+.courses__stick {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #5b45b8;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.courses__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    flex-grow: 1;
+}
+
+.courses__heading {
+    font-size: 16px;
+    color: #1e1b3a;
+}
+
+.courses__text {
+    font-size: 12px;
+    color: #4a4766;
+}
+
+.courses__price {
+    color: #3f2f94;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.courses__btn {
+    background-color: #e6e0fa;
+    border: none;
+    color: #3f2f94;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background-color .3s ease;
+}
+
+.courses__btn:hover, .courses__btn:focus, .courses__btn:focus-visible {
+    background-color: #c8b7fe;
+}

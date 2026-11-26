@@ -1,0 +1,83 @@
+.add-info {
+    margin: 0 56px 40px 56px;
+    background-color: #e9e3fa;
+    padding: 22px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .add-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.add-info__wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.add-info__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+    .add-info__text-wrapper {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .add-info__icon {
+        display: none;
+    }
+}
+
+.add-info__title {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+    .add-info__title {
+        text-align: center;
+    }
+}
+
+.add-info__text {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+    .add-info__text {
+        text-align: center;
+    }
+}
+
+.add-info__btn {
+    max-width: 220px;
+    font-size: 14px;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    background-color: #5b45b8;
+    color: #ffffff;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color .3s ease, scale .3s ease;
+}
+
+.add-info__btn:hover, .add-info__btn:focus, .add-info__btn:focus-visible {
+    background-color: #7f67e8;
+    scale: 1.1;
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-wrapper">
+            <svg class="header__logo-icon" width="50" height="50">
+                <use xlink:href="./icons/education.svg#edu-icon"></use>
+            </svg>
+            <span class="header__logo-name">EduHub</span>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#courses">Каталог</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#education">Обучение</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="./education.html#about-us" target="_blank">О нас</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="./education.html#contacts" target="_blank">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__links-wrapper">
+            <button class="header__search-btn">
+                <svg class="header__search-icon" width="22" height="22">
+                    <use xlink:href="./icons/search.svg#search-icon"></use>
+                </svg>
+            </button>
+            <a class="header__profile-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                <svg class="header__profile-icon" width="22" height="22">
+                    <use xlink:href="./icons/profile.svg#profile-icon"></use>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <main>
+        <h1 class="visually-hidden">Образовательные курсы</h1>
+        <section class="poster">
+            <div class="poster__info">
+                <h2 class="poster__heading">Ваш путь к новым знаниям начинается здесь</h2>
+                <p class="poster__text">Выбирайте курсы, развивайте навыки и достигайте целей вместе с нами.</p>
+                <a class="poster__btn" href="./education.html#contacts" target="_blank">Перейти к обучению</a>
+            </div>
+            <img class="poster__img" src="./images/laptop.jpg" alt="Фото ноутбука и чашки чая">
+        </section>
+        <section class="filters">
+            <div class="filters__wrapper">
+                <input class="filters__search" type="search" placeholder="Поиск по курсам..." name="search">
+                <select class="filters__direction" name="categories" id="categories">
+                    <option value="all" selected>Все категории</option>
+                    <option value="programming">Программирование</option>
+                    <option value="web-developing">Веб-разработка</option>
+                    <option value="ui-ux-design">UI/UX-дизайн</option>
+                    <option value="graphic-design">Графический дизайн</option>
+                    <option value="digital-marketing">Диджитал маркетинг</option>
+                    <option value="data-analyics">Аналитика данных</option>
+                    <option value="business-and-management">Бизнес и менеджмент</option>
+                    <option value="foreign-languages">Иностранные языки</option>
+                    <option value="psychology">Психология и саморазвитие</option>
+                    <option value="health-and-sport">Здоровье и спорт</option>
+                </select>
+                <select class="filters__sort" name="sort" id="sort">
+                    <option value="popular">По популярности</option>
+                    <option value="new">Сначала новые</option>
+                    <option value="expensive">Сначала дорогие</option>
+                    <option value="poor">Сначала дешевые</option>
+                    <option value="rating">По рейтингу</option>
+                    <option value="review">По количеству отзывов</option>
+                    <option value="time">По длительности обучения</option>
+                </select>
+            </div>
+            <svg class="filters__icon" width="20" height="20">
+                <use xlink:href="./icons/filters.svg#filters-icon"></use>
+            </svg>
+        </section>
+        <section class="courses" id="courses">
+            <ul class="courses__list">
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/program.jpg" alt="Иллюстрация кода на ноутбуке">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Программирование</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Python для начинающих</h3>
+                            <p class="courses__text">Освойте Python с нуля и создавайте свои проекты</p>
+                            <span class="courses__price">149 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/colors.jpg" alt="Иллюстрация красок дизайнера">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Дизайн</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Основы UI/UX дизайна</h3>
+                            <p class="courses__text">Создайте удобные и красивые интерфейсы</p>
+                            <span class="courses__price">124 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/digital.jpg" alt="Иллюстрация графика">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Маркетинг</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Digital-маркетинг</h3>
+                            <p class="courses__text">Продвигайте продукты и бренды онлайн</p>
+                            <span class="courses__price">139 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/analytics.jpg" alt="Иллюстрация анализа данных">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Аналитика</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Аналитика данных с нуля</h3>
+                            <p class="courses__text">Работайте с данными и находите инсайты</p>
+                            <span class="courses__price">164 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/notebook.jpg" alt="Иллюстрация записной книжки">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Бизнес</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Управление проектами</h3>
+                            <p class="courses__text">Эффективно планируйте и реализуйте проекты</p>
+                            <span class="courses__price">124 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/english.jpg" alt="Иллюстрация английского флага">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Иностранные языки</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Английский язык для работы</h3>
+                            <p class="courses__text">Говорите уверенно в любой ситуации</p>
+                            <span class="courses__price">109 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/psychology.jpg" alt="Фото кабинета психолога">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Психология</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Психология и саморазвитие</h3>
+                            <p class="courses__text">Поймите себя и станьте счастливее</p>
+                            <span class="courses__price">99 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+                <li class="coursese__item">
+                    <article class="courses__card">
+                        <div class="courses__img-wrapper">
+                            <img class="courses__img" src="./images/yoga.jpg" alt="Фото занятия йоги">
+                            <button class="courses__like-btn">
+                                <svg class="courses__like-icon" width="20" height="20">
+                                    <use xlink:href="./icons/like.svg#like-icon"></use>
+                                </svg>
+                            </button>
+                            <span class="courses__stick">Здоровье</span>
+                        </div>
+                        <div class="courses__content-wrapper">
+                            <h3 class="courses__heading">Йога для баланса</h3>
+                            <p class="courses__text">Укрепите тело и успокойте ум</p>
+                            <span class="courses__price">99 990 тг</span>
+                            <button class="courses__btn">Подробнее</button>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section class="add-info" id="education">
+            <div class="add-info__wrapper">
+                <svg class="add-info__icon" width="50" height="50">
+                    <use xlink:href="./icons/rocket.svg#rocket-icon"></use>
+                </svg>
+                <div class="add-info__text-wrapper">
+                    <h3 class="add-info__title">Хотите узнать больше о нашем учебном сервисе?</h3>
+                    <p class="add-info__text">Откройте страницу с возможностями обучения и оставьте заявку</p>
+                </div>
+            </div>
+            <a class="add-info__btn" href="./education.html#contacts" target="_blank">Перейти к обучению</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo-content">
+                <svg class="footer__logo-icon" width="50" height="50">
+                    <use xlink:href="./icons/education.svg#edu-icon"></use>
+                </svg>
+                <div class="footer__logo-text-wrapper">
+                    <span class="footer__logo-name">EduHub</span>
+                    <span class="footer__logo-text">Учись. Развивайся. Достигай.</span>
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#courses">Каталог</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#education">Обучение</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="./education.html#about-us" target="_blank">О нас</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="./education.html#contacts" target="_blank">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__socials-list">
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                        <svg class="footer__telegram-icon" width="20" height="20">
+                            <use xlink:href="./icons/telegram.svg#telegram-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                        <svg class="footer__vk-icon" width="20" height="20">
+                            <use xlink:href="./icons/vk.svg#vk-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                        <svg class="footer__youtube-icon" width="20" height="20">
+                            <use xlink:href="./icons/youtube.svg#youtube-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__add-info">
+            <span class="footer__rights">ⓒ 2026 EduHub. Все права защищены.</span>
+            <div class="footer__add-info-wrapper">
+                <a class="footer__confidentiality" href="https://developer.mozilla.org/en-US/" target="_blank">Политика конфиденциальности</a>
+                <a class="footer__agreement" href="https://developer.mozilla.org/en-US/" target="_blank">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
