@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Узнайте, как работает наш сервис, какие задачи он решает и какие преимущества даёт пользователям.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
+    <title>Подробная информация о нашем сервисе</title>
 </head>
 <body>
     <header class="header">
@@ -175,9 +176,15 @@
                 <h3 class="contacts__title">Оставьте заявку на обучение</h3>
                 <p class="contacts__text">Мы свяжемся с вами и поможем выбрать курс</p>
             </div>
-            <form action="#" method="POST" class="contacts__form">
-                <input type="name" class="contacts__input" placeholder="Ваше имя*" required>
-                <input type="email" class="contacts__input" placeholder="Email*" required>
+            <form action="#" method="GET" class="contacts__form">
+                <div class="contacts__input-wrapper">
+                    <label for="name" class="contacts__input-label"></label>
+                    <input id="name" type="text" name="name" class="contacts__input" placeholder="Ваше имя*" required>
+                </div>
+                <div class="contacts__input-wrapper">
+                    <label for="email" class="contacts__input-label"></label>
+                    <input id="email" type="text" name="email" class="contacts__input" placeholder="Email*" required>
+                </div>
                 <select class="contacts__direction" name="categories" id="categories">
                     <option value="all" selected>Все категории</option>
                     <option value="programming">Программирование</option>
@@ -191,7 +198,7 @@
                     <option value="psychology">Психология и саморазвитие</option>
                     <option value="health-and-sport">Здоровье и спорт</option>
                 </select>
-                <button class="contacts__btn" type="button">Оправить заявку</button>
+                <button class="contacts__btn" type="submit">Оправить заявку</button>
             </form>
             <svg class="contacts__icon" width="100" height="100">
                 <use xlink:href="./icons/message.svg#message-icon"></use>
